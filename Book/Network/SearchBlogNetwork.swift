@@ -42,7 +42,7 @@ class SearchBookNetwork {
         
         let request = NSMutableURLRequest(url: url)
         request.httpMethod = "GET"
-        request.setValue("KakaoAK 974defb9863e9c41e3f9ec6a213475a0", forHTTPHeaderField: "Authorization")
+        request.setValue(Storage().apiKey, forHTTPHeaderField: "Authorization")
         
         return session.rx.data(request: request as URLRequest)
             .map { data in

@@ -27,6 +27,7 @@
 		C59B48A4289D01EA00ABD2F4 /* MainModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B48A3289D01EA00ABD2F4 /* MainModel.swift */; };
 		C59B48A6289D02BE00ABD2F4 /* FilterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C59B48A5289D02BE00ABD2F4 /* FilterViewModel.swift */; };
 		C5BC7C1E289D0A0500C740BD /* SearchBarViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BC7C1D289D0A0500C740BD /* SearchBarViewModel.swift */; };
+		C5BC7C6E289D358A00C740BD /* Storage.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5BC7C6D289D358A00C740BD /* Storage.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +55,7 @@
 		C59B48A3289D01EA00ABD2F4 /* MainModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainModel.swift; sourceTree = "<group>"; };
 		C59B48A5289D02BE00ABD2F4 /* FilterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FilterViewModel.swift; sourceTree = "<group>"; };
 		C5BC7C1D289D0A0500C740BD /* SearchBarViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = SearchBarViewModel.swift; path = Book/SearchBarViewModel.swift; sourceTree = SOURCE_ROOT; };
+		C5BC7C6D289D358A00C740BD /* Storage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Storage.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -109,6 +111,7 @@
 				C59B4879289CF48300ABD2F4 /* Assets.xcassets */,
 				C59B487B289CF48300ABD2F4 /* LaunchScreen.storyboard */,
 				C59B487E289CF48300ABD2F4 /* Info.plist */,
+				C5BC7C6D289D358A00C740BD /* Storage.swift */,
 			);
 			path = Book;
 			sourceTree = "<group>";
@@ -289,6 +292,7 @@
 				C59B4887289CF54900ABD2F4 /* SearchNetworkError.swift in Sources */,
 				C59B4889289CF55A00ABD2F4 /* BookListCellData.swift in Sources */,
 				C59B4875289CF48100ABD2F4 /* MainViewController.swift in Sources */,
+				C5BC7C6E289D358A00C740BD /* Storage.swift in Sources */,
 				C59B4871289CF48100ABD2F4 /* AppDelegate.swift in Sources */,
 				C59B4885289CF53800ABD2F4 /* Book.swift in Sources */,
 				C59B488F289CF58D00ABD2F4 /* SearchBar.swift in Sources */,
