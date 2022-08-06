@@ -19,7 +19,7 @@ struct BookDocument: Decodable {
     
     enum CodingKeys: String, CodingKey {
         case title, thumbnail, datetime
-        case description = "contents"
+        case description = "author"
     }
     
     init(from decoder: Decoder) throws {
