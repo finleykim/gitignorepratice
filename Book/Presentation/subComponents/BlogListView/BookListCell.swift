@@ -20,10 +20,9 @@ class BookListCell: UITableViewCell {
         
         thumbnailImageView.contentMode = .scaleAspectFit
         
-        nameLabel.font = .systemFont(ofSize: 18, weight: .bold)
+        titleLabel.font = .systemFont(ofSize: 18, weight: .bold)
         
-        titleLabel.font = .systemFont(ofSize: 14)
-        titleLabel.numberOfLines = 2
+        nameLabel.font = .systemFont(ofSize: 14)
         
         datetimeLabel.font = .systemFont(ofSize: 12, weight: .light)
         
@@ -31,27 +30,26 @@ class BookListCell: UITableViewCell {
             contentView.addSubview($0)
         }
         
-        nameLabel.snp.makeConstraints {
-            $0.top.leading.equalToSuperview().inset(8)
-            $0.trailing.lessThanOrEqualTo(thumbnailImageView.snp.leading).offset(-8)
+        titleLabel.snp.makeConstraints {
+            $0.top.equalToSuperview().inset(8)
+            $0.leading.equalTo(thumbnailImageView.snp.trailing).offset(8)
+            $0.trailing.equalToSuperview().inset(8)
         }
         
         thumbnailImageView.snp.makeConstraints {
             $0.centerY.equalToSuperview()
-            $0.top.trailing.bottom.equalToSuperview().inset(8)
+            $0.top.leading.bottom.equalToSuperview().inset(8)
             $0.width.height.equalTo(80)
         }
         
-        titleLabel.snp.makeConstraints {
-            $0.top.equalTo(nameLabel.snp.bottom).offset(8)
-            $0.leading.equalTo(nameLabel)
-            $0.trailing.equalTo(thumbnailImageView.snp.leading).offset(-8)
+        nameLabel.snp.makeConstraints {
+            $0.top.equalTo(titleLabel.snp.bottom).offset(8)
+            $0.leading.equalTo(titleLabel)
         }
         
         datetimeLabel.snp.makeConstraints {
-            $0.top.equalTo(titleLabel.snp.bottom).offset(8)
-            $0.leading.equalTo(nameLabel)
-            $0.trailing.equalTo(titleLabel)
+            $0.top.equalTo(nameLabel.snp.bottom).offset(2)
+            $0.leading.equalTo(titleLabel)
             $0.bottom.equalTo(thumbnailImageView)
         }
     }
